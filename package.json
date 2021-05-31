@@ -1,0 +1,25 @@
+{
+  "name": "akamai-node-edgegrid-docker",
+  "description": "Build docker image to run Akamas's node edgegrid with a simple node script.",
+  "version": "1.0.0",
+  "main": "list-network-lists.js",
+  "dependencies": {
+    "edgegrid": "^3.0.8"
+  },
+  "scripts": {
+    "start": "node list-network-lists.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaescalo/akamai-node-edgegrid-docker.git"
+  },
+  "keywords": [
+    "edgegrid"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaescalo/akamai-node-edgegrid-docker/issues"
+  },
+  "homepage": "https://github.com/jaescalo/akamai-node-edgegrid-docker#readme"
+}
