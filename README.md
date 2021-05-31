@@ -14,11 +14,13 @@ This demo also contains a very small Node.js project (list-network-lists.js) whi
 1. Clone this repository locally
 
 2. Build the Docker image
+
 `$ docker build --tag edgegrid-node:latest .`
 
-For this image I'm using the node 15.14.0 image based on alpine3.0. When the build process executes the `npm install --production` section it will install all the depencies specified in the `package.json' file.
+For this image I'm using the node 15.14.0 image based on alpine3.0. When the build process executes the `npm install --production` command it will install all the depencies specified in the `package.json' file.
 
 3. Start the container, allow read-only access to the local [`.edgerc`](https://developer.akamai.com/api/getting-started#edgercfile) file and run the app: `npm start`.
+
 `$ docker run -it --rm --name edgegrid-node -v $HOME/.edgerc:/root/.edgerc:ro edgegrid-node:latest npm start`
 
 In our `package.json` the start script is `node list-network-lists.js`
